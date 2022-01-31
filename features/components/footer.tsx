@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Text, Wrapper } from '../../styles/footer';
 import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from './icons';
 
 const Footer: () => JSX.Element = () => {
@@ -10,22 +10,10 @@ const Footer: () => JSX.Element = () => {
   ];
 
   return (
-    <Box
-      sx={{
-        background: '#1C1616',
-        width: '100%',
-        px: 4,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-evenly',
-        flexDirection: 'column',
-      }}
-    >
+    <Wrapper>
       <div>{icons}</div>
-      <Typography variant="caption" sx={{ pb: 1, pt: 0.5, color: 'white' }}>
-        Made with ❤️ by Brighten Tompkins
-      </Typography>
-    </Box>
+      <Text variant="caption">Made with ❤️ by Brighten Tompkins</Text>
+    </Wrapper>
   );
 };
 

@@ -10,7 +10,7 @@ export const Welcome = styled(Typography)`
 export const Tagline = styled(Typography)`
   text-transform: uppercase;
   font-size: 1.3rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     padding-top: 1em;
   }
 `;
@@ -21,7 +21,7 @@ export const HeroBox = styled(Box)`
   justify-content: space-around;
 
   flex-direction: row;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
