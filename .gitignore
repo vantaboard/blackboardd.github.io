@@ -2,6 +2,7 @@
 
 # adobe xd design files
 /design
+*.xd
 
 # dependencies
 /node_modules
