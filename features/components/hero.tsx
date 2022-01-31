@@ -1,12 +1,12 @@
 import { HeroBox, Tagline, Welcome } from '../../styles/hero';
 
-const Hero = () => {
+const Hero: () => JSX.Element = () => {
   return (
     <HeroBox>
       <Welcome>
         Hi, my name is Brighten, and
         <br />
-        I'm a web developer.
+        I&apos;m a web developer.
       </Welcome>
       <Tagline>Building things to make us smile.</Tagline>
     </HeroBox>
