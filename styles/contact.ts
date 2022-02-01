@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { Avatar, Box, Card } from '@mui/material';
 
 export const StyledAvatar = styled(Avatar)`
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
   width: 10rem;
   height: 10rem;
 `;
