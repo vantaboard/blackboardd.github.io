@@ -8,25 +8,12 @@ export default {
   component: Header,
 } as ComponentMeta<typeof Header>;
 
-const Template: ComponentStory<typeof Header> = (args) => {
+const Template: ComponentStory<typeof Header> = () => {
   return (
     <Box sx={{ px: 10, py: 3 }}>
-      <Header {...args} />
+      <Header />
     </Box>
   );
 };
 
-export const Home = Template.bind({});
-Home.args = {
-  curr: 'home',
-};
-
-export const Projects = Template.bind({});
-Projects.args = {
-  curr: 'projects',
-};
-
-export const Contact = Template.bind({});
-Contact.args = {
-  curr: 'contact',
-};
+export const Primary = Template.bind({});

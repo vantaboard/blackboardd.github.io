@@ -1,7 +1,7 @@
 import { ShowcaseHeader, Wrapper } from '../../../styles/project';
 
 export interface IShowcaseProps {
-  children: JSX.Element;
+  children?: JSX.Element;
   date: Date;
   format: string;
 }

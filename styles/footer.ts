@@ -2,10 +2,11 @@ import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
 
 export const Wrapper = styled(Box)`
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
-  width: auto;
+  width: -moz-available;
+  width: -webkit-fill-available;
   background: #1c1616;
   padding-top: 0.5em;
   padding-bottom: 0.5em;

@@ -1,11 +1,17 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { IconButton } from '@mui/material';
+import { useEffect, useState } from 'react';
 import { IconBox } from '../../styles/scrollTo';
 
 export const ScrollTo: () => JSX.Element = () => {
-  const getIcon: () => JSX.Element = () =>
-    window.pageYOffset ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />;
+  const [arrow, setArrow] = useState(<KeyboardArrowDownIcon />);
+
+  useEffect(() => {
+    setArrow(
+      window.pageYOffset ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />
+    );
+  }, []);
 
   const scrollToTop: () => void = () => {
     window.pageYOffset
@@ -15,7 +21,7 @@ export const ScrollTo: () => JSX.Element = () => {
 
   return (
     <IconButton onClick={() => scrollToTop}>
-      <IconBox>{getIcon()}</IconBox>
+      <IconBox>{arrow}</IconBox>
     </IconButton>
   );
 };
