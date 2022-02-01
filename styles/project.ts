@@ -19,7 +19,7 @@ export const Wrapper = styled(Box)`
     background-color: #fff;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1500px) {
     margin-top: 3.5rem;
     margin-left: 3.5rem;
     &:before {
@@ -29,6 +29,12 @@ export const Wrapper = styled(Box)`
 `;
 
 export const ImgWrapper = styled(Box)`
+  @media (max-width: 1500px) {
+    margin-bottom: -3rem;
+  }
+  @media (min-width: 1500px) {
+    margin-top: -3rem;
+  }
   padding-left: calc(1.5rem + (25vw - 768px) * 0.25);
   padding-right: 0.5rem;
 `;
@@ -41,7 +47,7 @@ export const ItemHeader = styled(Typography)`
   font-size: 1.2rem;
   margin-left: -0.45rem;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1500px) {
     text-align: center;
     font-size: 1.5rem;
     margin-top: -9rem;
@@ -62,7 +68,7 @@ export const ShowcaseHeader = styled(Typography)`
   text-transform: uppercase;
   padding-bottom: 0.5rem;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1500px) {
     margin-top: 2rem;
     margin-left: -9rem;
   }
