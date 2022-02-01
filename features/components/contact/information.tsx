@@ -26,7 +26,7 @@ const Information: () => JSX.Element = () => {
       <br />
       <Box sx={{ display: 'flex' }}>
         <Work sx={{ mt: 0.25, pr: 0.5 }} fontSize="small" />
-        <Typography>Looking for work</Typography>
+        <Typography>Open to new opportunities</Typography>
       </Box>
     </Box>
   );
