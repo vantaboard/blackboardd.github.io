@@ -9,7 +9,7 @@ const Hero: () => JSX.Element = () => {
         I&apos;m a web developer.
       </Welcome>
       <Tagline>
-        Building creative projects
+        I build creative projects
         <br />
         that solve real-world problems.
       </Tagline>
