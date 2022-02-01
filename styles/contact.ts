@@ -34,6 +34,8 @@ export const AvatarBox = styled(Box)`
 `;
 
 export const ContactCard = styled(Card)`
+  transition: padding 0.2s ease-in-out;
+
   width: fit-content;
   height: auto;
   display: flex;
@@ -53,6 +55,8 @@ export const ContactCard = styled(Card)`
 `;
 
 export const InfoBox = styled(Box)`
+  transition: padding 0.2s ease-in-out;
+
   @media (min-width: 1000px) {
     padding-left: 6rem;
     padding-bottom: 4.5rem;

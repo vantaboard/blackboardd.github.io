@@ -8,7 +8,11 @@ const Hero: () => JSX.Element = () => {
         <br />
         I&apos;m a web developer.
       </Welcome>
-      <Tagline>Building things to make us smile.</Tagline>
+      <Tagline>
+        Building creative projects
+        <br />
+        that solve real-world problems.
+      </Tagline>
     </HeroBox>
   );
 };

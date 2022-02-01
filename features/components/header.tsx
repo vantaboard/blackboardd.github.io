@@ -1,29 +1,16 @@
-import { Box } from '@mui/material';
-import { ReactElement, useState } from 'react';
-import { Link } from 'react-scroll';
+import { Box, Link } from '@mui/material';
 import HeaderButton from '../../styles/headerButton';
 
 const Header: () => JSX.Element = () => {
-  const headerButtons: Array<ReactElement> = [];
-
-  const [curr, setCurr] = useState('home');
+  const headerButtons: Array<JSX.Element> = [];
 
   ['home', 'projects', 'contact'].forEach((_) => {
     const href = `#${_}`;
     const content = _.charAt(0).toUpperCase() + _.slice(1);
 
     headerButtons.push(
-      <HeaderButton isCurrent={curr === _}>
-        <Link
-          onClick={() => setCurr(_)}
-          activeClass="active"
-          className={href}
-          to={_}
-          smooth={true}
-          duration={500}
-        >
-          {content}
-        </Link>
+      <HeaderButton>
+        <Link href={href}>{content}</Link>
       </HeaderButton>
     );
   });

@@ -12,3 +12,5 @@
 .eslintrc
 .prettierrc
 next.config.js
+
+/out/
