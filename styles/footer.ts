@@ -2,6 +2,8 @@ import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
 
 export const Wrapper = styled(Box)`
+  transition: all 0.2s ease-in-out;
+
   position: fixed;
   left: 0;
   bottom: 0;
@@ -26,6 +28,8 @@ export const Wrapper = styled(Box)`
 `;
 
 export const Text = styled(Typography)`
+  transition: all 0.2s ease-in-out;
+
   @media (max-width: 768px) {
     padding-bottom: 0.8em;
     justify-content: space-evenly;

@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html>
+      <Html className="scroll-smooth" style={{ scrollBehavior: 'smooth' }}>
         <Head>
           <link
             rel="stylesheet"

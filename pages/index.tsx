@@ -1,4 +1,5 @@
 import {
+  Box,
   Container,
   createTheme,
   Link,
@@ -12,7 +13,6 @@ import Header from '../features/components/header';
 import Hero from '../features/components/hero';
 import { Project } from '../features/components/project';
 import ScrollTo from '../features/components/scrollTo';
-import aslB from '../public/images/asl-b.png';
 import { ContactBox, HeroBox, ProjectBox, ThanksBox } from '../styles';
 import { HeaderBox } from '../styles/headerButton';
 import { Content, Wrapper } from '../styles/hero';
@@ -56,7 +56,9 @@ const Home: NextPage = () => {
           <br />
         </>
       }
-      img={<img width="80rem" src={aslB} alt="asl b emoji" />}
+      img={
+        <img width="80rem" src="static/images/asl-b.png" alt="asl b emoji" />
+      }
       date={new Date(2022, 0, 1)}
       format="MMyyyy"
     />
@@ -64,8 +66,8 @@ const Home: NextPage = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Wrapper>
-        <Content id="home" className="section">
+      <Wrapper id="home">
+        <Content className="section">
           <HeaderBox>
             <Header />
           </HeaderBox>
@@ -74,10 +76,18 @@ const Home: NextPage = () => {
               <Hero />
             </HeroBox>
             <div id="projects" className="section">
-              <ProjectBox>{projects}</ProjectBox>
+              <ProjectBox>
+                <Box sx={{ display: 'flex', justifyContent: 'center', pb: 2 }}>
+                  <Typography variant="h3">Projects</Typography>
+                </Box>
+                {projects}
+              </ProjectBox>
             </div>
             <div id="contact" className="section">
               <ContactBox>
+                <Box sx={{ display: 'flex', justifyContent: 'center', pb: 4 }}>
+                  <Typography variant="h3">Contact</Typography>
+                </Box>
                 <Contact />
               </ContactBox>
             </div>
