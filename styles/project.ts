@@ -25,6 +25,7 @@ export const Wrapper = styled(Box)`
   }
 
   @media (min-width: 1500px) {
+    padding-top: 2rem;
     margin-top: 3.5rem;
     margin-left: 3.5rem;
     &:before {
