@@ -7,6 +7,7 @@ import {
   Typography,
 } from '@mui/material';
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import Contact from '../features/components/contact';
 import Footer from '../features/components/footer';
 import Header from '../features/components/header';
@@ -143,6 +144,10 @@ const Home: NextPage = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <title>Brighten Tompkins</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Wrapper id="home">
         <Content className="section">
           <HeaderBox>
