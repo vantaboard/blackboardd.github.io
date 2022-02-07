@@ -1,46 +1,41 @@
-import { Box, ButtonBase, ButtonProps } from '@mui/material';
+import { Box, ButtonBase } from '@mui/material';
 import { styled } from '@mui/material/styles';
-
-interface HeaderButtonProps extends ButtonProps {
-  isCurrent?: boolean;
-}
 
 export const HeaderBox = styled(Box)`
   display: flex;
+  transition: margin-top 0.2s ease-in-out;
   transition: margin-right 0.2s ease-in-out;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1000px) {
     justify-content: center;
-    margin-right: 0rem;
+    margin-right: 0;
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 1000px) {
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 1.5rem;
   }
 
   @media (min-width: 1800px) {
     justify-content: right;
     margin-right: -16rem;
+    margin-top: 1.5rem;
   }
-  margin-top: 1.5rem;
   margin-bottom: 10rem;
 `;
 
-export const HeaderButton = styled(ButtonBase)<HeaderButtonProps>`
-  color: ${(props) => (props.isCurrent ? '#000' : '#989898')};
+export const HeaderButton = styled(ButtonBase)`
+  color: #000;
   width: fit-content;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 8.5px;
+  padding-bottom: 6.5px;
   transition: color 0.2s ease-in-out;
 
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: ${(props) => (props.isCurrent ? '1px' : 0)};
-    width: 2.5em;
-    background: #aaa;
-  }
-
   &:hover {
-    color: ${(props) => (props.isCurrent ? '#313131' : '#6B6B6B')};
+    color: #313131;
   }
 `;
 

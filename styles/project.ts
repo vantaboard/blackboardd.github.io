@@ -2,11 +2,16 @@ import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
 
 export const Wrapper = styled(Box)`
+  transition: margin-top 0.2s ease-in-out;
+  transition: margin-left 0.2s ease-in-out;
+
   padding-left: 1.5rem;
   padding-bottom: 1.85rem;
   border-left: 1px solid #beb4b4;
 
   &:before {
+    transition: top 0.2s ease-in-out;
+
     content: '';
     left: -31px;
     position: relative; /*makes left effective*/
@@ -20,6 +25,7 @@ export const Wrapper = styled(Box)`
   }
 
   @media (min-width: 1500px) {
+    padding-top: 2rem;
     margin-top: 3.5rem;
     margin-left: 3.5rem;
     &:before {
@@ -29,6 +35,9 @@ export const Wrapper = styled(Box)`
 `;
 
 export const ImgWrapper = styled(Box)`
+  -webkit-mask-image: linear-gradient(to top, transparent 2%, black 5%);
+  mask-image: linear-gradient(to top, transparent 2%, black 5%);
+
   @media (max-width: 1500px) {
     margin-bottom: -3rem;
   }
@@ -40,6 +49,11 @@ export const ImgWrapper = styled(Box)`
 `;
 
 export const ItemHeader = styled(Typography)`
+  transition: text-align 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+  transition: margin-top 0.2s ease-in-out;
+  transition: margin-bottom 0.2s ease-in-out;
+
   color: #575757;
   font-weight: bold;
   padding-top: 0.5rem;
@@ -62,6 +76,9 @@ export const ItemWrapper = styled(Box)`
 `;
 
 export const ShowcaseHeader = styled(Typography)`
+  transition: margin-top 0.2s ease-in-out;
+  transition: margin-left 0.2s ease-in-out;
+
   color: #949494;
   font-weight: bold;
   font-size: 0.85rem;

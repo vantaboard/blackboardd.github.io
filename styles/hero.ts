@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
-import background from '../public/images/background.jpg';
 
 export const Content = styled.div`
   position: relative;
@@ -20,7 +19,7 @@ export const Wrapper = styled.div`
     right: -8px;
     left: -8px;
     bottom: 0;
-    background-image: url(${background});
+    background-image: url('static/images/background.jpg');
     background-size: cover;
     background-position: top center;
     opacity: 0.25;
@@ -38,7 +37,10 @@ export const Welcome = styled(Typography)`
 `;
 
 export const Tagline = styled(Typography)`
+  transition: padding-top 0.2s ease-in-out;
+
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.3rem;
   @media (max-width: 1000px) {
     padding-top: 2.5em;
