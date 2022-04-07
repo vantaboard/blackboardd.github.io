@@ -7,6 +7,10 @@ tsconfig.tsbuildinfo
 /design
 *.xd
 
+# build
+/out
+/storybook-static
+
 # dependencies
 /node_modules
 /.pnp
