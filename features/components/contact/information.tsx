@@ -17,10 +17,10 @@ const Information: () => JSX.Element = () => {
           <Typography>brightenqtompkins@gmail.com</Typography>
         </Box>
       </Link>
-      <Link href="https://www.google.com/maps?hl=en&q=dinuba+ca">
+      <Link href="https://www.google.com/maps?hl=en&q=palo+alto+ca">
         <Box sx={{ display: 'flex' }}>
           <LocationOn sx={{ mt: 0.5, pr: 0.5 }} fontSize="small" />
-          <Typography>Dinuba, CA</Typography>
+          <Typography>Palo Alto, CA</Typography>
         </Box>
       </Link>
       <br />
