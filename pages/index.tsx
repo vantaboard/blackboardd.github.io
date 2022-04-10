@@ -31,6 +31,42 @@ const Home: NextPage = () => {
     <Project
       heading={
         <>
+          shoppy @{' '}
+          <Link
+            href="https://bitbucket.org/blackboardd/shoppy/src/main/"
+            target="_blank"
+          >
+            bitbucket
+          </Link>
+        </>
+      }
+      text={
+        <>
+          Ecommerce platform with full CRUD support.
+          <br />
+          <br />
+          This project uses vanilla PHP 7.4, Composer, MySQL, Docker, and Nginx
+          to build a fully functional ecommerce platform.
+          <br />
+          <br />
+          Shoppy was created as a test for Scandiweb, a web development company
+          based in Riga, Latvia. This website was created to showcase my
+          development of REST APIs, my knowledge of design patterns, and my
+          ability to structure and maintain a full stack web application.
+          <br />
+          <br />
+        </>
+      }
+      img={<img width="80rem" src="static/images/shoppy.png" alt="shoppy" />}
+      date={new Date(2022, 4)}
+      format="MMyyyy"
+    />
+  );
+
+  projects.push(
+    <Project
+      heading={
+        <>
           xps-upcharge @{' '}
           <Link
             href="https://github.com/blackboardd/xps-upcharge"
