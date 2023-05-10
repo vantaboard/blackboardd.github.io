@@ -1,4 +1,4 @@
-import { AvatarBox, ContactCard, InfoBox } from '@/styles';
+import { AvatarBox, ContactCard } from '@/styles';
 import { ContactAvatar } from './ContactAvatar';
 import { Information } from './Information';
 
