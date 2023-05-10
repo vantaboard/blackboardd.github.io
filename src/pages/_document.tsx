@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <title>Brighten Tompkins</title>
                     <Link
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
