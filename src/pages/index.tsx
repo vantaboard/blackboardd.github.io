@@ -20,7 +20,7 @@ const Home: NextPage = () => {
                     <Container>
                         <Hero />
                         <div id="projects" className="section">
-                            <SectionTitle>Projects</SectionTitle>
+                            <SectionTitle>Experience</SectionTitle>
                             <ProjectBox>
                                 <Project {...projects.sponsorcx} />
                                 <Project {...projects.shoppy} />
