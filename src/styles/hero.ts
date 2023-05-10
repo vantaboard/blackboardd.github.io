@@ -18,33 +18,31 @@ export const HeroWrapper = styled.div`
     right: -8px;
     left: -8px;
     bottom: 0;
-    background-image: url('static/images/background.jpg');
-    background-size: cover;
-    background-position: top center;
-    opacity: 0.25;
-}
   }
 `;
 
 export const Welcome = styled.div`
-    font-size: 2rem;
+    transition: margin 0.2s ease-in-out;
+
+    font-size: 1.75rem;
+    margin-left: 3rem;
     text-align: center;
     line-height: 1.3;
 
     @media (max-width: 1500px) {
-        font-size: 1.5rem;
-        padding-bottom: 40px;
+        margin-left: unset;
+        margin-top: 2rem;
+        font-size: 1.3rem;
     }
 `;
 
 export const Tagline = styled.div`
-    transition: padding-top 0.2s ease-in-out;
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 2;
 
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.3rem;
-    @media (max-width: 1500px) {
-        padding-top: 2.5em;
-        font-size: 1rem;
-    }
+    font-style: italic;
 `;

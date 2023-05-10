@@ -1,27 +1,14 @@
-import Document, {
-    DocumentContext,
-    Head,
-    Html,
-    Main,
-    NextScript,
-} from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Link from 'next/link';
 
-class MyDocument extends Document {
-    static async getInitialProps(ctx: DocumentContext) {
-        const initialProps = await Document.getInitialProps(ctx);
-        return { ...initialProps };
-    }
-
-    render(): JSX.Element {
+export default class MyDocument extends Document {
+    render() {
         return (
-            <Html
-                className="scroll-smooth"
-                style={{ scrollBehavior: 'smooth' }}
-            >
+            <Html>
                 <Head>
-                    <link
+                    <Link
                         rel="stylesheet"
-                        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
                     />
                 </Head>
                 <body>
@@ -32,5 +19,3 @@ class MyDocument extends Document {
         );
     }
 }
-
-export default MyDocument;

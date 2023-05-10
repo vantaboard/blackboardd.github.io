@@ -1,0 +1,53 @@
+{
+    "sponsorcx": {
+        "title": "SponsorCX",
+        "role": "Senior Software Engineer",
+        "url": "https://www.sponsorcx.com/",
+        "description": "📈 A software that helps properties and brands efficiently manage all their sponsorships while maintaining a high level of collaboration with their partners. Sponsorship management made easy.\n\nWorked as a junior software engineer quickly making my way up to senior level. I worked diligently to provide reporting features as well as bringing a depth of knowledge about optimization and performance. As a fullstack engineer, I also was equipped with a strong skill in developer operations and Unix tooling.",
+        "width": "80",
+        "height": "80",
+        "src": "/static/images/sponsorcx.png",
+        "from": "2022-05",
+        "to": "2023-05"
+    },
+    "shoppy": {
+        "title": "Shoppy",
+        "role": "Side Project",
+        "url": "https://bitbucket.org/vantaboard/shoppy/src/main/",
+        "description": "🛍️ Ecommerce platform with full CRUD support.\n\nThis project uses vanilla PHP 7.4, Composer, MySQL, Docker, and Nginx to build a fully functional ecommerce platform.\n\nShoppy was created as a test for Scandiweb, a web development company based in Riga, Latvia. This website was created to showcase my development of REST APIs, my knowledge of design patterns, and my ability to structure and maintain a full stack web application.",
+        "width": "80",
+        "height": "80",
+        "src": "/static/images/shoppy.png",
+        "from": "2022-05"
+    },
+    "xpsUpcharge": {
+        "title": "XPS Upcharge",
+        "role": "Side Project",
+        "url": "https://github.com/vantaboard/xps-upcharge",
+        "description": "📦 Userscript that modifies XPS Shipper\n\nThis project uses TypeScript, Styled Components, React, and Rollup to construct a userscript for use with GreaseMonkey, TamperMonkey, or ViolentMonkey.\n\nThis script modifies XPS Shipper by calculating upcharges for different vendors based on unique percentages for each vendor. The script uses GreaseMonkey's API in order to save the percentages to a to a database. It also maintains an options menu for setting up settings.",
+        "width": "80",
+        "height": "80",
+        "src": "/static/images/xpsshipper.png",
+        "from": "2022-02"
+    },
+    "signingsaavy": {
+        "title": "Signing Saavy API",
+        "role": "Side Project",
+        "url": "https://github.com/vantaboard/signingsavvy",
+        "description": "🧏 Unofficial Python API wrapper for https://signingsavvy.com\n\n This project uses Python's Quart package to create a local that can be used to make queries to a REST API.\n\nI started this project to help with learning American Sign Language because it is something I have always found interesting and wanted to learn. I ended up using the API to create a script to scrape and construct flashcards for Anki.",
+        "width": "80",
+        "height": "180",
+        "src": "/static/images/asl-b.png",
+        "from": "2022-01"
+    },
+    "gadfly": {
+        "title": "Gadfly",
+        "role": "Side Project",
+        "url": "https://github.com/vantaboard/gadfly",
+        "description": "🪰 Google Apps Script homework helper.\n\nThis project uses Google Apps Script with Clasp, TypeScript, and MediaWiki to create a homework helper that pulls definitions from Wikipedia to help with defining lists.\n\n This project was inspired by a homework project one of my friends had for art history where she had to define terms. This helped her to understand the terms that she had to learn.",
+        "width": "80",
+        "height": "92",
+        "src": "/static/images/gadfly.png",
+        "from": "2021-10"
+    }
+}

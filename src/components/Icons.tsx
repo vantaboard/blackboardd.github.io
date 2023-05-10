@@ -6,18 +6,19 @@ import {
     faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
+import { IconButton } from '@/styles';
 
 export const GitHubIcon = () => {
     return (
-        <Link href="https://github.com/blackboardd" target="_blank">
-            <button
+        <Link href="https://github.com/vantaboard" target="_blank">
+            <IconButton
                 aria-label="github.com"
                 onClick={() =>
-                    window.open('https://github.com/blackboardd', '_blank')
+                    window.open('https://github.com/vantaboard', '_blank')
                 }
             >
-                <FontAwesomeIcon icon={faGithub} fontSize="small" />
-            </button>
+                <FontAwesomeIcon icon={faGithub} />
+            </IconButton>
         </Link>
     );
 };
@@ -28,7 +29,7 @@ export const LinkedInIcon = () => {
             href="https://www.linkedin.com/in/brightentompkins"
             target="_blank"
         >
-            <button
+            <IconButton
                 aria-label="linkedin.com"
                 onClick={() =>
                     window.open(
@@ -37,23 +38,23 @@ export const LinkedInIcon = () => {
                     )
                 }
             >
-                <FontAwesomeIcon icon={faLinkedin} fontSize="small" />
-            </button>
+                <FontAwesomeIcon icon={faLinkedin} />
+            </IconButton>
         </Link>
     );
 };
 
 export const TwitterIcon = () => {
     return (
-        <Link href="https://twitter.com/blkboardd" target="_blank">
-            <button
+        <Link href="https://twitter.com/vantaboard" target="_blank">
+            <IconButton
                 aria-label="twitter.com"
                 onClick={() =>
-                    window.open('https://twitter.com/blkboardd', '_blank')
+                    window.open('https://twitter.com/vantaboard', '_blank')
                 }
             >
-                <FontAwesomeIcon icon={faTwitter} fontSize="small" />
-            </button>
+                <FontAwesomeIcon icon={faTwitter} />
+            </IconButton>
         </Link>
     );
 };
@@ -61,14 +62,14 @@ export const TwitterIcon = () => {
 export const InstagramIcon = () => {
     return (
         <Link href="https://www.instagram.com/brightenq" target="_blank">
-            <button
+            <IconButton
                 aria-label="instagram.com"
                 onClick={() =>
                     window.open('https://www.instagram.com/brightenq', '_blank')
                 }
             >
-                <FontAwesomeIcon icon={faInstagram} fontSize="small" />
-            </button>
+                <FontAwesomeIcon icon={faInstagram} />
+            </IconButton>
         </Link>
     );
 };

@@ -1,90 +1,89 @@
 import styled from 'styled-components';
+import { Card } from './card';
+import Link from 'next/link';
 
 export const ShowcaseWrapper = styled.div`
+    display: flex;
+
+    line-height: 1.5;
+    
     transition: margin-top 0.2s ease-in-out;
     transition: margin-left 0.2s ease-in-out;
 
+    align-items: center;
+
     padding-left: 1.5rem;
+    padding-top: 1.85rem;
     padding-bottom: 1.85rem;
     border-left: 1px solid #beb4b4;
 
-    &:before {
-        transition: top 0.2s ease-in-out;
-
-        content: '';
-        left: -32px;
-        position: relative; /*makes left effective*/
-        display: table-cell;
-        top: 16px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        border: 1px solid #949494;
-        background-color: #fff;
+    @media (max-width: 1500px) {
+        margin-top: 1rem;
+        padding-left: unset;
+        border-left: none;
     }
+`;
+
+export const PreviewWrapper = styled(Link)`
+    display: flex;
+
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width: 1500px) {
-        padding-top: 2rem;
-        margin-top: 3.5rem;
-        margin-left: 3.5rem;
-        &:before {
-            top: 100px;
-        }
+        min-width: 400px;
     }
 `;
 
 export const ImgWrapper = styled.div`
-    display: flex;
-
     -webkit-mask-image: linear-gradient(to top, transparent 2%, black 5%);
     mask-image: linear-gradient(to top, transparent 2%, black 5%);
-
-    @media (max-width: 1500px) {
-        margin-bottom: -3rem;
-    }
-    @media (min-width: 1500px) {
-        margin-top: -3rem;
-    }
-    padding-left: calc(1.5rem + (25vw - 768px) * 0.25);
-    padding-right: 0.5rem;
 `;
 
-export const ItemHeader = styled.div`
-    display: flex;
-
-    transition: text-align 0.2s ease-in-out;
-    transition: font-size 0.2s ease-in-out;
-    transition: margin-top 0.2s ease-in-out;
-    transition: margin-bottom 0.2s ease-in-out;
-
-    color: #575757;
+export const ItemRole = styled.div`
     font-weight: bold;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.2rem;
-    margin-left: -0.45rem;
+`;
 
-    @media (min-width: 1500px) {
-        text-align: center;
-        font-size: 1.5rem;
-        margin-top: -9rem;
-        margin-bottom: 1rem;
-    }
+export const ItemTitle = styled.div`
+    font-size: 1.25rem;
+    padding-left: 20px;
+    display: flex;
+    line-height: 1.5;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+`;
+
+export const ItemLink = styled.div`
+    font-size: 1.25rem;
+    color: blue;
+    text-decoration: underline;
 `;
 
 export const ItemWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    font-size: 1.25rem;
 `;
 
-export const ProjectWrapper = styled.div`
+export const ProjectWrapper = styled(Card)`
     display: flex;
-    padding-left: 200px;
-    padding-right: 150px;
+    flex-direction: row;
+    min-height: 200px;
+    word-wrap: break-all;
+
+    @media (max-width: 1500px) {
+        margin-left: -3px;
+        min-width: 300px;
+        flex-direction: column;
+    }
 `;
 
-export const ShowcaseHeader = styled.div`
+export const ShowcaseDate = styled.div`
     display: flex;
     justify-content: center;
 

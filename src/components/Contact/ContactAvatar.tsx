@@ -3,10 +3,10 @@ import { Avatar } from '@/styles';
 export const ContactAvatar = () => {
     return (
         <Avatar
-            width="100"
-            height="100"
+            width="200"
+            height="200"
             alt="Brighten Tompkins"
-            src="/static/images/brighten.jpg"
+            src="/static/images/avatar.jpg"
         />
     );
 };

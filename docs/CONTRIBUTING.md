@@ -12,8 +12,8 @@ npm
 
 ```shell
 # Clone repo
-$ git clone https://github.com/blackboardd/blackboardd.github.io.git
-$ cd blackboardd.github.io
+$ git clone https://github.com/vantaboard/vantaboard.github.io.git
+$ cd vantaboard.github.io
 
 # Install dependencies
 $ npm install
@@ -26,8 +26,8 @@ yarn
 
 ```shell
 # Clone repo
-$ git clone https://github.com/blackboardd/blackboardd.github.io.git
-$ cd blackboardd.github.io
+$ git clone https://github.com/vantaboard/vantaboard.github.io.git
+$ cd vantaboard.github.io
 
 # Install dependencies
 $ yarn install

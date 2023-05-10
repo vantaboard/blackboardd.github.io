@@ -17,23 +17,15 @@ export const FooterWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
 
-    @media (max-width: 768px) {
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: space-evenly;
-        flex-direction: column;
+    @media (max-width: 1000px) {
+        display: none;
     }
 `;
 
 export const Text = styled.div`
     transition: all 0.2s ease-in-out;
 
-    @media (max-width: 768px) {
-        padding-bottom: 0.8em;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
     color: white;
 `;

@@ -4,84 +4,57 @@ export const HeroBox = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: auto;
-    width: 80%;
-
-    justify-content: space-around;
+    padding-top: 1rem;
+    justify-content: center;
 
     transition: padding 0.5s ease-in-out;
 
     @media (max-width: 1500px) {
         flex-direction: column;
-        padding-bottom: 4rem;
     }
 
     @media (min-width: 1500px) {
-        padding-top: 2rem;
         padding-bottom: 0rem;
     }
 `;
 
-export const ThanksBox = styled.div`
-    transition: padding 0.5s ease-in-out;
-
+export const SectionTitle = styled.h1`
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media (max-width: 1500px) {
-        padding-bottom: 4.5rem;
-    }
-    @media (min-width: 1500px) {
-        padding-bottom: 12rem;
-    }
-`;
-
-export const ContactBox = styled.div`
-    transition: padding 0.5s ease-in-out;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media (max-width: 1500px) {
-        padding-top: 7rem;
-        padding-bottom: 3rem;
-    }
-
-    @media (min-width: 1500px) {
-        padding-top: 16rem;
-        padding-bottom: 4rem;
-    }
+    width: 100%;
+    justify-content: center;
+    padding-top: 1rem;
 `;
 
 export const ProjectBox = styled.div`
-    display: grid;
+    display: flex;
 
     flex-direction: column;
+    align-items: center;
 
-    transition: padding 0.5s ease-in-out;
+    transition: padding, margin 0.5s ease-in-out;
 
     @media (max-width: 1500px) {
-        padding-top: 7rem;
         padding-bottom: 0;
     }
 
     @media (min-width: 1500px) {
-        padding-top: 18rem;
         padding-bottom: 0;
     }
 `;
 
 export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
 `;
 
 export * from './avatar';
 export * from './card';
 export * from './contact';
 export * from './footer';
-export * from './header';
 export * from './hero';
 export * from './project';
-export * from './scrollTo';
 export * from './information';
+export * from './icons';

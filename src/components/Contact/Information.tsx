@@ -23,13 +23,13 @@ export const Information = () => {
                     <span>brightenqtompkins@gmail.com</span>
                 </ContactItem>
             </Link>
-            <Link href="https://www.google.com/maps?hl=en&q=fresno+ca">
+            <Link href="https://youtu.be/1-J9na1h4vc">
                 <ContactItem>
                     <ContactIcon icon={faMusic} fontSize="small" />
                     <span>Caveman - You Got a Feeling</span>
                 </ContactItem>
             </Link>
-            <Link href="https://youtu.be/1-J9na1h4vc">
+            <Link href="https://www.google.com/maps?hl=en&q=fresno+ca">
                 <ContactItem>
                     <ContactIcon icon={faLocationDot} fontSize="small" />
                     <span>Fresno, CA</span>

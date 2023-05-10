@@ -4,6 +4,7 @@
 
 body {
     scrollbar-width: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
 ::-webkit-scrollbar {
