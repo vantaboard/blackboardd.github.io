@@ -3,8 +3,8 @@ import React from 'react';
 import Contact from '../features/components/contact';
 
 export default {
-  title: 'Portfolio/Contact',
-  component: Contact,
+    title: 'Portfolio/Contact',
+    component: Contact,
 } as ComponentMeta<typeof Contact>;
 
 const Template: ComponentStory<typeof Contact> = () => <Contact />;
