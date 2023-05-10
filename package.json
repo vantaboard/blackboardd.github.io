@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npx next build && npx next export && echo '' > out/.nojekyll && echo 'www.brightentompkins.com' > out/CNAME && npx gh-pages -d out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
     "eslint_d": "^12.2.1",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8"
   }
 }
