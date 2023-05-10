@@ -1,15 +1,20 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Contact, Footer, Hero, Project } from '@/components';
 import { HeroBox, ProjectBox, Container, SectionTitle, Tagline, Card } from '@/styles';
 import { Content, HeroWrapper } from '@/styles';
 import projects from './projects.json';
+import Head from 'next/head';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
     return (
         <>
             <Head>
                 <title>Brighten Tompkins</title>
+                    <Link
+                        rel="stylesheet"
+                        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+                    />
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
