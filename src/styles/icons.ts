@@ -5,10 +5,8 @@ export const IconButton = styled.button`
     background: none;
     border: none;
     cursor: pointer;
-    width: 40px;
     outline: inherit;
     padding-top: 1.5rem;
-    font-size: 1.5rem;
     color: #ff6aff;
 `;
 

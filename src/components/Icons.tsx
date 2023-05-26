@@ -17,7 +17,7 @@ export const GitHubIcon = () => {
                     window.open('https://github.com/vantaboard', '_blank')
                 }
             >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} fontSize="25" />
             </IconButton>
         </Link>
     );
@@ -38,7 +38,7 @@ export const LinkedInIcon = () => {
                     )
                 }
             >
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} fontSize="25" />
             </IconButton>
         </Link>
     );
@@ -53,7 +53,7 @@ export const TwitterIcon = () => {
                     window.open('https://twitter.com/vantaboard', '_blank')
                 }
             >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faTwitter} fontSize="25" />
             </IconButton>
         </Link>
     );
@@ -68,7 +68,7 @@ export const InstagramIcon = () => {
                     window.open('https://www.instagram.com/brightenq', '_blank')
                 }
             >
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faInstagram} fontSize="25" />
             </IconButton>
         </Link>
     );
