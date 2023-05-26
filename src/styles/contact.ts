@@ -65,9 +65,10 @@ export const ContactButton = styled(Link)`
 `;
 
 export const ContactIcon = styled(FontAwesomeIcon)`
-    width: 20px;
+    height: 12px;
     padding: 10px 10px;
-    padding-left: 15px;
+    padding-left: 19px;
+    padding-right: 12px;
     border-right: 1px solid black;
     margin-right: 10px;
 `;

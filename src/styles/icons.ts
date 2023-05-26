@@ -7,6 +7,7 @@ export const IconButton = styled.button`
     cursor: pointer;
     outline: inherit;
     padding-top: 1.5rem;
+    height: 25px;
     color: #ff6aff;
 `;
 
