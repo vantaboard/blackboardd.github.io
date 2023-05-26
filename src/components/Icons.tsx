@@ -5,12 +5,12 @@ import {
     faLinkedin,
     faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import Link from 'next/link';
+import IconLink from 'next/link';
 import { IconButton } from '@/styles';
 
 export const GitHubIcon = () => {
     return (
-        <Link href="https://github.com/vantaboard" target="_blank">
+        <IconLink href="https://github.com/vantaboard" target="_blank">
             <IconButton
                 aria-label="github.com"
                 onClick={() =>
@@ -19,13 +19,13 @@ export const GitHubIcon = () => {
             >
                 <FontAwesomeIcon icon={faGithub} fontSize="25" />
             </IconButton>
-        </Link>
+        </IconLink>
     );
 };
 
 export const LinkedInIcon = () => {
     return (
-        <Link
+        <IconLink
             href="https://www.linkedin.com/in/brightentompkins"
             target="_blank"
         >
@@ -40,13 +40,13 @@ export const LinkedInIcon = () => {
             >
                 <FontAwesomeIcon icon={faLinkedin} fontSize="25" />
             </IconButton>
-        </Link>
+        </IconLink>
     );
 };
 
 export const TwitterIcon = () => {
     return (
-        <Link href="https://twitter.com/vantaboard" target="_blank">
+        <IconLink href="https://twitter.com/vantaboard" target="_blank">
             <IconButton
                 aria-label="twitter.com"
                 onClick={() =>
@@ -55,13 +55,13 @@ export const TwitterIcon = () => {
             >
                 <FontAwesomeIcon icon={faTwitter} fontSize="25" />
             </IconButton>
-        </Link>
+        </IconLink>
     );
 };
 
 export const InstagramIcon = () => {
     return (
-        <Link href="https://www.instagram.com/brightenq" target="_blank">
+        <IconLink href="https://www.instagram.com/brightenq" target="_blank">
             <IconButton
                 aria-label="instagram.com"
                 onClick={() =>
@@ -70,6 +70,6 @@ export const InstagramIcon = () => {
             >
                 <FontAwesomeIcon icon={faInstagram} fontSize="25" />
             </IconButton>
-        </Link>
+        </IconLink>
     );
 };
