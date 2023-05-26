@@ -1,6 +1,14 @@
-import { AvatarBox, HeroBox, HeroWrapper, IconRow, Tagline, Welcome } from '@/styles';
+import {
+    AvatarBox,
+    HeroBox,
+    HeroWrapper,
+    IconRow,
+    Tagline,
+    Welcome,
+} from '@/styles';
 import { ContactAvatar } from './Contact/ContactAvatar';
 import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from './Icons';
+import { Contact } from './Contact';
 
 export const Hero = () => {
     const icons = [
@@ -34,6 +42,7 @@ export const Hero = () => {
                     </div>
                 </div>
             </Tagline>
+            <Contact />
         </div>
     );
 };

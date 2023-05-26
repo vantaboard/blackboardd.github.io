@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
     position: relative;
+    margin-bottom: 100px;
 `;
 
 export const HeroWrapper = styled.div`
