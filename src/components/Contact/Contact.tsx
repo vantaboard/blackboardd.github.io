@@ -5,18 +5,18 @@ import {
 } from '@/styles';
 import {
     faEnvelope,
-    faCoffee,
+    faCalendar,
     faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const Contact = () => {
     return (
         <ContactCard>
-            <ContactButton href="https://brightenqtompkins-647b0d.trycoffeechats.com/">
-                <ContactIcon icon={faCoffee} fontSize="12" />
-                <span>Coffee Chat</span>
+            <ContactButton href="https://calendly.com/vantaboard/">
+                <ContactIcon icon={faCalendar} fontSize="12" />
+                <span>Book a Chat with Me</span>
             </ContactButton>
-            <ContactButton href="tel:+1-650-731-9032">
+            <ContactButton href="tel:+1-650-602-3244">
                 <ContactIcon icon={faPhone} fontSize="12" />
                 <span>+1 (650) 602-3244</span>
             </ContactButton>
